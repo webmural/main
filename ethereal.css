@@ -1,19 +1,35 @@
+:any-link {
+  transition: 180ms;
+  color: inherit;
+}
+
 :root {
   transition: 360ms;
   background: #318;
   color: hotpink;
 }
 
-::selection {
-  background: turquoise;
-  color: #111;
-}
-
-:any-link {
-  transition: 180ms;
-  color: inherit;
-}
-
 :focus {
   outline-color: turquoise;
+}
+
+::selection {
+  background: turquoise;
+  color: #318;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background: hotpink;
+    color: midnightblue;
+  }
+
+  :focus {
+    outline-color: #111;
+  }
+
+  ::selection {
+    background: #318;
+    color: turquoise;
+  }
 }
