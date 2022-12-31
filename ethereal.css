@@ -1,31 +1,19 @@
-::selection {
-  background: darkviolet;
-  color: gold;
-}
-
 :root {
-  color: #200222;
-  background: skyblue;
+  transition: 360ms;
+  background: #318;
+  color: hotpink;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: deepskyblue;
-  }
-}
-
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
-  }
+::selection {
+  background: turquoise;
+  color: #111;
 }
 
 :any-link {
-  color: #50a;
-  outline-color: #50a;
+  transition: 180ms;
+  color: inherit;
 }
 
-mark {
-  color: #11111d;
-  background: magenta;
+:focus {
+  outline-color: turquoise;
 }
